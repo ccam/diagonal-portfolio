@@ -6,6 +6,9 @@ a {
 ul {
   list-style: none; }
 
+body {
+  background-color: #EBEBEB; }
+
 header {
   background-image: url("../img/street.jpg");
   background-size: cover;
@@ -36,7 +39,7 @@ header {
     z-index: 5;
     margin: 5vh 0 0 5vw; }
   .fabPicFlex .follows {
-    margin-right: 5vw;
+    margin: 3vh 5vw 0 0;
     z-index: 5; }
     .fabPicFlex .follows p {
       margin-right: 25vw;
@@ -45,45 +48,49 @@ header {
       position: relative;
       top: 15vh;
       right: 5vh; }
-    .fabPicFlex .follows .FAB {
-      z-index: 5;
-      text-align: center;
-      height: 100px;
-      width: 100px;
-      background: #aaa;
-      color: #fff;
-      font-size: 5em;
-      border-radius: 50%;
-      position: relative;
-      top: 5vh;
-      left: 50vw; }
 
 .followsFlex {
   display: flex; }
 
 .diagonal {
   height: 25vh;
-  width: 105vw;
+  width: 102vw;
   overflow: hidden;
+  background-color: #EBEBEB;
   position: relative;
   top: -10vh;
   left: -2vw;
   z-index: 2;
-  background-color: #fff;
   transform: skew(0deg, -5deg);
   -ms-transform: skew(0deg, -5deg);
   -webkit-transform: skew(0deg, -5deg);
   box-shadow: inset 10px 5px 5px #999; }
 
 .main {
+  z-index: 5;
   width: 80vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  top: -15vh; }
+  .main .about {
+    margin: 0;
+    padding: 0; }
 
-.movies h3 {
-  text-align: center; }
-
-.movies .movieFlex {
-  display: flex;
-  background-color: #a1a1a1; }
-  .movies .movieFlex h4 {
+.movies {
+  padding-bottom: 20px; }
+  .movies h3 {
     text-align: center; }
+  .movies .movieFlex {
+    padding-bottom: 3vh;
+    display: flex;
+    background-color: #a1a1a1;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #222;
+    overflow: hidden; }
+    .movies .movieFlex .one {
+      padding-left: 5vw; }
+    .movies .movieFlex .one, .movies .movieFlex .two, .movies .movieFlex .three, .movies .movieFlex .four {
+      text-align: center;
+      margin: 0 1vw; }
+    .movies .movieFlex h4 {
+      text-align: center; }
